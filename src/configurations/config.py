@@ -32,7 +32,7 @@ class AppConfig:
     GAMES: int = 100
 
     def __init__(self, env):
-        for field in self.__annotations__:
+        for field in get_type_hints(AppConfig):
             # Field will be skipped if not in all caps
             if not field.isupper():
                 continue

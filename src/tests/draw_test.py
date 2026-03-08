@@ -1,4 +1,3 @@
-import pytest
 from helpers.draw import render_cell, _piece, _pieces_in_row, _board, _results
 from colorama import Fore, Style
 from helpers.piece import Piece

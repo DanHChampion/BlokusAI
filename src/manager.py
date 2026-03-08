@@ -1,7 +1,6 @@
 # Import
 import time
 import random
-import csv
 
 from .configurations.config import configuration
 from .configurations.constants import BOARD_SIZE, NUM_PLAYERS, ALL_PIECES

@@ -1,5 +1,3 @@
-import pytest
-
 from helpers.logic import (
     is_cell_within_bounds,
     is_cell_free,

@@ -1,9 +1,9 @@
 import pygame
 import sys
-import os
 
 from ..configurations.config import configuration
 from ..configurations.constants import BOARD_SIZE, NUM_PLAYERS
+from .constants import *
 from . import render
 
 

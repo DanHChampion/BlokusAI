@@ -10,6 +10,11 @@ A showcase of multiple AI agents to master Blokus.
 - Link to [Documentation](https://danhchampion.github.io/BlokusAI/docs.html) # TODO
 - Link to [Demo](https://danhchampion.github.io/BlokusAI/demo.html) # TODO
 
+### Create a Python virtual environment
+```bash
+python -m venv venv
+```
+
 ### Activate the virtual environment
 ```bash
 venv\Scripts\activate
@@ -17,14 +22,13 @@ venv\Scripts\activate
 
 ### Install requirements
 ```bash
-pip install -r /requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Environment variables
-Copy the `.env` file into the `configurations` folder to set up the environment variables.
-
+Copy the `.env.template` file in the `configurations` folder to set up the environment variables.
 ```bash
-cp configurations/.env.example configurations/.env
+copy src/configurations/.env.template src/configurations/.env
 ```
 
 The `.env` file contains the following configurations:
@@ -50,9 +54,14 @@ Available AI versions: `v1`, `v2`, `v3`
 
 Run the simulations
 ```bash
-python run.py --phase CLI
-python run.py --phase GUI
-python run.py --phase GAME
+python run.py --phase CLI # Light-weight simulation
+python run.py --phase GUI # See them play against each other
+python run.py --phase GAME # Play against the AIs
 python run.py --phase EXP # Incomplete, not working yet
 python run.py --phase DQN # Incomplete, not working yet
 ```
+
+### Game Controls
+1. Drag & drop the piece on the the board
+2. Whilst holding, press 'f' to flip piece horizontally
+3. Whilst holding, press 'r' to rotate piece clockwise
