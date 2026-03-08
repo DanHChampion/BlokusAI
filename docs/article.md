@@ -550,7 +550,9 @@ And now is the moment you’ve been waiting for... the Reinforcement Learning AI
 - A way to explore the environment: The AI needs to be able to try different moves and see what happens. I used a simple epsilon-greedy strategy, where the AI picks a random move with a small probability (epsilon) and otherwise picks the best move based on its current knowledge.
 - A way to learn from experience: The AI needs to be able to update its knowledge based on the rewards it receives. I used a simple Q-learning algorithm, where the AI updates its Q-values based on the rewards it receives and the best Q-value of the next state.
 
+The strategy used in this template is Deep Q-Network (DQN), originally introduced by:
 
+Mnih, V., Kavukcuoglu, K., Silver, D., Ruber, A.A., Veness, J., Bellemare, M.G., Graves, A., Riedmiller, M., Fidjeland, A.K., Ostrovski, G., Petersen, S., Beattie, C., Sadik, A., Antonoglou, I., King, H., Kumaran, D., Wierstra, D., Legg, S., & Hassabis, D. (2015). Human-level control through deep reinforcement learning. Nature, 518(7540), 529–533. https://doi.org/10.1038/nature14236
 
 
 
@@ -597,5 +599,11 @@ Develop general command line engine, which is general enough for potentially oth
 Solve games which are about to end? Ensure victory when there are X amount of pieces left...
 Reinforment/Deep learning strategies?
 Search algorithms? look further ahead to moves opponent could make (2/3 rounds)
+
+The TODO comments in the code also reference potential next steps that have their own citations:
+
+Double DQN — van Hasselt, H., Guez, A., & Silver, D. (2016). Deep reinforcement learning with double Q-learning. AAAI.
+PPO — Schulman, J., Wolski, F., Dhariwal, P., Radford, A., & Klimov, O. (2017). Proximal policy optimization algorithms. arXiv:1707.06347.
+AlphaZero — Silver, D., Hubert, T., Schrittwieser, J., et al. (2018). A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play. Science, 362(6419), 1140–1144.
 
 Goodbye for now, 

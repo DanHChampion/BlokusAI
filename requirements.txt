@@ -3,3 +3,5 @@ colorama==0.4.6
 pygame-ce==2.5.7
 environs==11.0.0
 pytest>=9.0.2
+torch>=2.0.0
+gymnasium>=0.29.0
